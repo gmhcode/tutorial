@@ -64,7 +64,7 @@
                                 <rect key="frame" x="450" y="45" width="133" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.95219238660000005" blue="0.55220815130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="yellow">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="37" y="454" width="133" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76770626210000004" green="1" blue="0.75025057650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="green">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -86,7 +86,7 @@
                                 <rect key="frame" x="426" y="877" width="133" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.45314745709999998" blue="0.66790791559999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="pink">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="831" y="454" width="133" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53199148370000005" green="0.47659598809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="purple">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -111,6 +111,9 @@
                     <size key="freeformSize" width="984" height="1118"/>
                     <connections>
                         <outletCollection property="tutorialButtons" destination="i0b-Jc-oPC" collectionClass="NSMutableArray" id="NXD-1q-yYf"/>
+                        <outletCollection property="tutorialButtons" destination="KBB-c1-UdW" collectionClass="NSMutableArray" id="hIp-F9-hF6"/>
+                        <outletCollection property="tutorialButtons" destination="YHh-uM-ejg" collectionClass="NSMutableArray" id="n4t-Jf-ayA"/>
+                        <outletCollection property="tutorialButtons" destination="dpk-lS-ecE" collectionClass="NSMutableArray" id="RQu-7h-yFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-Rm-CFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,12 +288,21 @@
                                     <outlet property="delegate" destination="y0m-Ca-cdR" id="h2q-YP-Yop"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a78-pu-N8q">
+                                <rect key="frame" x="126" y="336" width="310" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lt1-e7-e1R"/>
                     </view>
                     <connections>
                         <outlet property="VCtextField" destination="oz3-D5-nR6" id="e30-BH-ON3"/>
+                        <outlet property="addTextTextField" destination="a78-pu-N8q" id="a4j-lX-6fQ"/>
                         <outlet property="viewNumberTextField" destination="e19-vF-wFa" id="CO8-NE-rcS"/>
                     </connections>
                 </viewController>
@@ -299,22 +311,38 @@
             </objects>
             <point key="canvasLocation" x="-1998.6328124999998" y="-138.79941434846265"/>
         </scene>
-        <!--View Controller-->
+        <!--Green View Controller-->
         <scene sceneID="rev-d7-mGh">
             <objects>
-                <viewController restorationIdentifier="greenPop" storyboardIdentifier="greenPop" id="e1V-33-t0A" sceneMemberID="viewController">
+                <viewController restorationIdentifier="greenPop" storyboardIdentifier="greenPop" id="e1V-33-t0A" customClass="GreenViewController" customModule="walkProTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nlA-qT-DAY">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPO-6u-X2L">
+                                <rect key="frame" x="35" y="37" width="130" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.51374271370000002" blue="0.10217926870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cPO-6u-X2L" firstAttribute="centerX" secondItem="nlA-qT-DAY" secondAttribute="centerX" id="4ud-Yk-2gK"/>
+                            <constraint firstItem="cPO-6u-X2L" firstAttribute="centerY" secondItem="nlA-qT-DAY" secondAttribute="centerY" id="ZD1-wK-IFy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lAP-2X-yj1"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="200" height="200"/>
+                    <connections>
+                        <outlet property="tutorialtext" destination="cPO-6u-X2L" id="HBX-tA-wt5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfp-yk-xFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2021" y="292"/>
+            <point key="canvasLocation" x="-2021.4843749999998" y="291.65446559297214"/>
         </scene>
     </scenes>
 </document>

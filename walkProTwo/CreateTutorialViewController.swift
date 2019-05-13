@@ -14,6 +14,7 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
 
     @IBOutlet weak var VCtextField: UITextField!
     @IBOutlet weak var viewNumberTextField: UITextField!
+    @IBOutlet weak var addTextTextField: UITextField!
     
     
     
@@ -33,10 +34,10 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
 
     @IBAction func addCommands(_ sender: Any) {
         
-        guard let VCText = VCtextField.text, let VCNumber = Int(viewNumberTextField.text ?? "0") else {print("🔥❇️>>>\(#file) \(#line): guard ket failed<<<"); return  }
+        guard let VCText = VCtextField.text, let VCNumber = Int(viewNumberTextField.text ?? "0"), let commandText = addTextTextField.text else {print("🔥❇️>>>\(#file) \(#line): guard ket failed<<<"); return  }
         
         
-        CommandController.shared.createAndPrepareCommand(viewController: VCText, view: VCNumber)
+        CommandController.shared.createAndPrepareCommand(viewController: VCText, view: VCNumber, text: commandText)
         
         
         

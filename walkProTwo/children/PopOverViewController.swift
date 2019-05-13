@@ -24,9 +24,12 @@ class PopOverViewController: UIViewController, UIPopoverControllerDelegate {
     
     
     @IBAction func press(_ sender: UIButton) {
-        if sender.tag == TutorialController.shared.commandArray[0].view.tag{
-            delegate?.nextCommand1()
+        if TutorialController.shared.commandArray.isEmpty == false {
+            if sender.tag == TutorialController.shared.commandArray[0].view.tag{
+                delegate?.nextCommand1()
+            }
         }
+        
     }
     
     weak var delegate: PopOverVCDelegate?

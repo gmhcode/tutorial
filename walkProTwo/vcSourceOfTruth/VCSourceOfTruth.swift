@@ -28,6 +28,17 @@ var popOverViewController: PopOverViewController = {
     return viewController
 }()
 
+var greenViewController: GreenViewController = {
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+    
+    var viewController = storyboard.instantiateViewController(withIdentifier: "greenPop") as! GreenViewController
+    
+    // viewController.view.frame = containerView.bounds
+    // self.addChild(viewController)
+    return viewController
+}()
+
 
 
 var popOverViewController2: PopOverViewController2 = {

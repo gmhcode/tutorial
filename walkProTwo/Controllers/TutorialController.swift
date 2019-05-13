@@ -53,13 +53,21 @@ class TutorialController {
     func addBubble(view: UIView, viewController: UIViewController) {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "greenPop")
+        let vc = storyBoard.instantiateViewController(withIdentifier: "greenPop") as! GreenViewController
         
         vc.modalPresentationStyle = UIModalPresentationStyle.popover
         vc.preferredContentSize = CGSize(width: 300, height: 100)
+        
+        
+//        if vc.tutorialtext != nil {
+//            vc.tutorialtext.text = TutorialController.shared.commandArray[0].text
+//        }
+        
+        
         let popover = vc.popoverPresentationController
         popover?.sourceView = view
         popover?.sourceRect = view.bounds
+        
         
         popover?.delegate = self as? UIPopoverPresentationControllerDelegate
         
@@ -83,6 +91,7 @@ class TutorialController {
                 previousVC = commandArray[0].viewController
             }
             addHighlight(view: commandArray[0].view)
+            
             addBubble(view: commandArray[0].view, viewController: commandArray[0].viewController)
         }
     }

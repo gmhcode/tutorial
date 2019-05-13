@@ -21,6 +21,7 @@
 		907FB22122862BA900046B0A /* VCSourceOfTruth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB22022862BA900046B0A /* VCSourceOfTruth.swift */; };
 		907FB22522862FBD00046B0A /* CreateTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB22422862FBD00046B0A /* CreateTutorialViewController.swift */; };
 		907FB227228638CA00046B0A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB226228638CA00046B0A /* TableViewController.swift */; };
+		90DB901B2287221E004BF9A3 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DB901A2287221E004BF9A3 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		907FB22022862BA900046B0A /* VCSourceOfTruth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSourceOfTruth.swift; sourceTree = "<group>"; };
 		907FB22422862FBD00046B0A /* CreateTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTutorialViewController.swift; sourceTree = "<group>"; };
 		907FB226228638CA00046B0A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		90DB901A2287221E004BF9A3 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				907FB21C228618FA00046B0A /* PopOverViewController.swift */,
 				907FB21E2286193A00046B0A /* PopOverViewController2.swift */,
+				90DB901A2287221E004BF9A3 /* GreenViewController.swift */,
 			);
 			path = children;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DB901B2287221E004BF9A3 /* GreenViewController.swift in Sources */,
 				907FB2182286158700046B0A /* CommandController.swift in Sources */,
 				907FB22122862BA900046B0A /* VCSourceOfTruth.swift in Sources */,
 				907FB2022286144100046B0A /* ParentViewController.swift in Sources */,

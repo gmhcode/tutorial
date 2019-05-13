@@ -13,13 +13,16 @@ protocol PopOverVC2Delegate: class {
 }
 
 
-class PopOverViewController2: UIViewController {
+class PopOverViewController2: UIViewController,UIPopoverControllerDelegate {
+    
     
     @IBOutlet var tutorialButtons: [UIButton]!
     
     @IBAction func press(_ sender: UIButton) {
-        if sender.tag == TutorialController.shared.commandArray[0].view.tag{
-            delegate?.nextCommand2()
+        if TutorialController.shared.commandArray.isEmpty == false {
+            if sender.tag == TutorialController.shared.commandArray[0].view.tag{
+                delegate?.nextCommand2()
+            }
         }
     }
     

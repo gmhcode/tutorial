@@ -42,8 +42,14 @@ class ParentViewController: UIViewController {
              Command(viewController:popOverViewController,view: popOverViewController.tutorialButtons[3])])
         
      
+        tutorial.commandArray[0].text = "number 1"
+        tutorial.commandArray[1].text = "number 2"
         
-        TutorialController.shared.begin(tutorial: tutorial, viewController: self)
+        if TutorialController.shared.tutorials.isEmpty == false{
+            TutorialController.shared.begin(tutorial: TutorialController.shared.tutorials[0], viewController: self)
+        }
+        
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
